@@ -13,7 +13,7 @@ function luckyornot(){
     {
         output.innerHTML = "You are always my Lucky Charm 😍";
     }
- if(date_of_birth.value != "" && lucky_number.value!= "")
+ else if(date_of_birth.value != "" && lucky_number.value!= "")
     {
     var sum=calculate(dob);
     var sum = sum % num;
