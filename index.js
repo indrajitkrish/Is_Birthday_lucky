@@ -3,17 +3,30 @@ var lucky_number = document.querySelector("#lucky_number");
 var check_button = document.querySelector("#check");
 var output = document.querySelector("#output");
 
+
 check_button.addEventListener("click",luckyornot);
 
 function luckyornot(){
     var dob=date_of_birth.value;
     var num=lucky_number.value;
+    if(date_of_birth == "14-10-1999")
+    {
+        output.innerHTML = "You are always my Lucky Charm 😍";
+    }
+    else if(date_of_birth.value != "" && lucky_number.value!= "")
+    {
     var sum=calculate(dob);
     var sum = sum % num;
     if(sum === 0)
     output.innerHTML = "Your birthday is Lucky as you 🤩";
     else
     output.innerHTML= "Your birthday is not lucky 😟";
+    }
+    else
+    {
+      output.innerHTML = "Please Enter both the values";
+    }
+    
 }
 
 function calculate(dob){
