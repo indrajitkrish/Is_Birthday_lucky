@@ -1,0 +1,53 @@
+:root{
+    --primary-BG: #293462;
+    --label: #D61C4E;
+    --heading: #FFF80A;
+    --input: #FEB139;
+}
+h1,textarea{
+    text-align: center;
+    color: var(--heading);
+}
+body{
+    background-color: var(--primary-BG);
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+}
+input,label,button,textarea{
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+label{
+    color: var(--input);
+}
+input{
+    height: 2rem;
+     width:15rem;  
+     color: var(--label);
+     
+}
+button{
+    width:10rem;
+    height: 2rem;
+    text-align: center;
+    color: var(--label);
+    font-size: larger;
+}
+button:hover{
+    color: var(--input);
+}
+textarea{
+    height: 5rem;
+    width: 25rem;
+    font-size: 25px;
+    text-align: justify;
+    font-weight: bolder;
+}

@@ -11,7 +11,7 @@ function luckyornot(){
     var sum=calculate(dob);
     var sum = sum % num;
     if(sum === 0)
-    output.innerHTML = "Your birthday is a Lucky as you 🤩";
+    output.innerHTML = "Your birthday is Lucky as you 🤩";
     else
     output.innerHTML= "Your birthday is not lucky 😟";
 }
