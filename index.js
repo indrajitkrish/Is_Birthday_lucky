@@ -9,9 +9,9 @@ check_button.addEventListener("click",luckyornot);
 function luckyornot(){
     var dob=date_of_birth.value;
     var num=lucky_number.value;
-    if(date_of_birth.value == "14-10-1999")
+    if(date_of_birth.value == "1999-10-14")
     {
-        output.innerHTML = "You are always my Lucky Charm 😍";
+        output.innerHTML = "You are always my Lucky Charm Nathesha😍";
     }
  else if(date_of_birth.value != "" && lucky_number.value!= "")
     {
